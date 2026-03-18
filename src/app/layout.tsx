@@ -11,8 +11,8 @@ import LanguageDetector from "@/components/LanguageDetector/LanguageDetector";
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({ 
-  subsets: ["latin"], 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
   variable: "--font-playfair",
   display: "swap",
 });
@@ -40,7 +40,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" translate="no">
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>

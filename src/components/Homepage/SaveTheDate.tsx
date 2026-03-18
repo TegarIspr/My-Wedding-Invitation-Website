@@ -50,7 +50,8 @@ const SaveTheDate = ({ language }) => {
   } = translations[language].saveTheDate_section;
 
   // Render custom dashed line
-  const dashedLine = Array(10).fill(null)
+  const dashedLine = Array(10)
+    .fill(null)
     .map((_, index) => (
       <div key={index} className="w-[2px] h-[5px] my-[3px] bg-gold" />
     ));

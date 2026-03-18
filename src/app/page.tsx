@@ -24,15 +24,21 @@ const RSVPSection = dynamic(() => import("@/components/Homepage/RSVPSection"), {
   ssr: false,
 });
 
-const RegistrySection = dynamic(() => import("@/components/Homepage/RegistrySection"), {
-  loading: () => <div className="h-64" />,
-  ssr: false,
-});
+const RegistrySection = dynamic(
+  () => import("@/components/Homepage/RegistrySection"),
+  {
+    loading: () => <div className="h-64" />,
+    ssr: false,
+  }
+);
 
-const MusicSection = dynamic(() => import("@/components/Homepage/MusicSection"), {
-  loading: () => <div className="h-64" />,
-  ssr: false,
-});
+const MusicSection = dynamic(
+  () => import("@/components/Homepage/MusicSection"),
+  {
+    loading: () => <div className="h-64" />,
+    ssr: false,
+  }
+);
 
 export default function Home() {
   const [language, setLanguage] = useState("en"); // Set default Language

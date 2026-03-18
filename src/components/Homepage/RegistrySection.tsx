@@ -84,7 +84,8 @@ const RegistrySection = ({ language }) => {
   };
 
   // Render a custom dashed line on screen
-  const dashedLine = Array(3).fill(null)
+  const dashedLine = Array(3)
+    .fill(null)
     .map((_, index) => (
       <div key={index} className="w-[2px] h-[5px] my-[3px] bg-gold" />
     ));

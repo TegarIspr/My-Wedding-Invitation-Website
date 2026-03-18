@@ -10,7 +10,7 @@ import { NextResponse } from "next/server";
 // Retrieve the password from environment variables
 const correctPassword = process.env.GUEST_ACCESS_PASSWORD;
 
-export async function POST(request: { json: () => any; }) {
+export async function POST(request: { json: () => any }) {
   try {
     const body = await request.json(); // Get the request body (which contains the password)
     const { password } = body;

@@ -523,8 +523,8 @@ const RSVPSection = ({ language }) => {
                             guestsToRsvp[0]?.attending === "unknown"
                               ? answers.unknown
                               : guestsToRsvp[0]?.attending === "Yes"
-                              ? answers.yes
-                              : answers.no
+                                ? answers.yes
+                                : answers.no
                           }
                         />
                       </SelectTrigger>
@@ -570,8 +570,8 @@ const RSVPSection = ({ language }) => {
                             guest.attending === "unknown"
                               ? answers.unknown
                               : guest.attending === "Yes"
-                              ? answers.yes
-                              : answers.no
+                                ? answers.yes
+                                : answers.no
                           }
                           className="w-[215px] px-4 rounded-md bg-neutral-100"
                         >
@@ -583,8 +583,8 @@ const RSVPSection = ({ language }) => {
                               guest.attending === "unknown"
                                 ? answers.unknown
                                 : guest.attending === "Yes"
-                                ? answers.yes
-                                : answers.no
+                                  ? answers.yes
+                                  : answers.no
                             }
                           />
                         </SelectTrigger>

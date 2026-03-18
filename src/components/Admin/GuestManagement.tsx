@@ -318,8 +318,8 @@ const ViewGuestsList = ({
                           guest.attending === "No"
                             ? "bg-red-500"
                             : guest.attending === "Yes"
-                            ? "bg-green-500"
-                            : "bg-gray-500"
+                              ? "bg-green-500"
+                              : "bg-gray-500"
                         }`}
                       />
                     </div>

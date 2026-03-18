@@ -86,7 +86,7 @@ const images = {
   la2,
   la3,
   divider,
-  location
+  location,
 };
 
 export default images;

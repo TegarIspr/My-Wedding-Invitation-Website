@@ -91,10 +91,10 @@ const WelcomeSection = ({ language }) => {
                 language === "en"
                   ? images.curved_en
                   : language === "it"
-                  ? images.curved_it
-                  : language === "pl"
-                  ? images.curved_pl
-                  : images.curved_en
+                    ? images.curved_it
+                    : language === "pl"
+                      ? images.curved_pl
+                      : images.curved_en
               }
               alt="we did it"
               width={200}

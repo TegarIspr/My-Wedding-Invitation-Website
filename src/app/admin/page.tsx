@@ -8,7 +8,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { signInWithPopup, GoogleAuthProvider, signOut, User } from "firebase/auth";
+import {
+  signInWithPopup,
+  GoogleAuthProvider,
+  signOut,
+  User,
+} from "firebase/auth";
 import { auth } from "@/firebase/config";
 import { useRouter } from "next/navigation";
 import { FcGoogle } from "react-icons/fc";

@@ -8,7 +8,7 @@
 import { NextResponse } from "next/server";
 import { getClientAccessToken } from "@/utils/spotifyClient";
 
-export async function GET(req: { url: string | URL; }) {
+export async function GET(req: { url: string | URL }) {
   const { searchParams } = new URL(req.url);
   const query = searchParams.get("query");
 
